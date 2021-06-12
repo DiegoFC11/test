@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Migrantes</title>
+    <link rel="stylesheet" href="../css/Estilos Login.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class = "container">
+      <img src="../img/Logo.jpg" style="width:200px;height:200px">
+        <h1>GESTIÓN DE APP MIGRANTES</h1><br>
+        <h1>Crear Cuenta</h2><br><br>
+    </header>
+    <section style="text-align: center;">
+      <input type="email" id="email" name="usuario" placeholder="Coloca tu email" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;"/><br><br>
+      <input type="password" id="pass" name="password" placeholder="Contraseña" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;"/><br><br>
+      <input type="password" id="cpass" name="cpassword" placeholder="Confirmar Contraseña" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;"/><br><br><br>
+      <button onclick="enviar()" name="crear" style="background-color: #FDC800; font-family: Arial, Helvetica, sans-serif; color: black; font-size: 20px;">Crear Cuenta</button><br><br>
+      <a href = "/Index.html" style="background-color: #FDC800; font-family: Arial, Helvetica, sans-serif; color: black; font-size: 20px;">Iniciar Sesión</a>
+    </section>
+    <footer id="Pie" style="font-family: Helvetica; font-size:17px; background: #00A945; color: whitesmoke; margin-top: 345px;">
+        <p>Todos los derechos Reservados © 2021</p>
+    </footer>
+  </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDOF1P_D5MA89Wue2V98ZTFoQIRYaX1h3Q",
+      authDomain: "migraseguro-ce58f.firebaseapp.com",
+      databaseURL: "https://migraseguro-ce58f.firebaseio.com",
+      projectId: "migraseguro-ce58f",
+      storageBucket: "migraseguro-ce58f.appspot.com",
+      messagingSenderId: "136609848053",
+      appId: "1:136609848053:web:8bca88def5a8f8ceb843bc",
+      measurementId: "G-9XX5L7P81W"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+      function enviar()
+      {
+        var email=document.getElementById('email').value;
+        var pass=document.getElementById('pass').value;
+        firebase.auth().createUserWithEmailAndPassword(email, pass)
+        .catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+            Bandera = 1;
+        });
+      }
+  </script>
+</html>

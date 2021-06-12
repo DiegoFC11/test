@@ -1,0 +1,44 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.Form
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.TituloF
+{
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.Form article input
+{
+  font-size: 27px;
+  width: 600px;
+}
+
+.Tabla
+{
+  margin-left: -50px;
+  margin-top: 100px;
+  text-align: right;
+}
+
+footer
+{
+  margin-top: 309px;
+  background: #00A945;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: larger;
+  text-align: center;
+}

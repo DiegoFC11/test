@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Casos</title>
+    <link rel="stylesheet" href="../css/Estilos Menu.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/Logo.jpg">
+  </head>
+  <body>
+    <header class = "container">
+      <img src="../img/Logo.jpg" class="Logo">
+      <h1 class="Titulo">MIS CASOS</h1>
+      <section class="Menu">
+        <ul class="nav">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="#">Usuarios</a>
+              <ul>
+                <li><a href="Detalle de Usuario.html">Detalle del Usuario</a></li>
+                <li><a href="Listado de Casos.html">Listado de Casos</a></li>
+                <li><a href="Listado de Defensores.html">Listado de Defensores</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Buscar Caso</a>
+              <ul>
+                <li><a href="Todos los Casos.html">Todos los Casos</a></li>
+                <li><a href="Casos de mi Institucion.html">Casos de mi Institución</a></li>
+                <li><a href="Mis Casos.html">Mis Casos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Buscar Migrante</a>
+              <ul>
+                <li><a href="Buscar Migrante.html">Buscar Migrante</a></li>
+                <li><a href="Migrantes de mis Casos.html">Migrantes de mis Casos</a></li>
+              </ul>
+            </li>
+            <li><a href="Buscar Institucion.html">Buscar Institución</a></li>
+            <li><a href="Tomar Nuevo Caso.html">Tomar Nuevo Caso</a></li>
+            <li><a href="Indicadores.html">Indicadores</a></li>
+            <li><button onclick="cerrar()">Cerrar Sesión</button></li>
+        </ul>
+      </section>
+    </header>
+    <article style="margin-top: 30px;">
+      <table>
+        <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 60px; font-size: 20px">
+        <th width="1%">
+          ID Caso
+        </th>
+        <th>
+          Región
+        </th>
+        <th>
+          Tipo de Caso
+        </th>
+        <th>
+          Fecha de Alta
+        </th>
+        <th>
+          Estado
+        </th>
+        <th>
+          Ruta de Evidencias
+        </th>
+        <th>
+          Altitud
+        </th>
+        <th>
+          Latitud
+        </th>
+        <th>
+          Longitud
+        </th>
+        <th>
+          Asignado
+        </th>
+        <th>
+          Institución
+        </th>
+      </tr>
+      <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 110px; margin-left: -30px; font-size: 30px">
+        <td width="5%"><input type="text" id="Id Caso" disabled="true" value="1-CS001"/></td>
+        <td width="5%"><input type="text" id="Region" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Tipo de Caso" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Fecha Alta" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Estado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Ruta Evidencias" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Altitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Latitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Longitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Asignado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Efectividad2" disabled="true"/></td>
+      </tr>
+      <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 110px; margin-left: -30px; font-size: 30px">
+        <td width="5%"><input type="text" id="Id Caso" disabled="true" value="1-CS001"/></td>
+        <td width="5%"><input type="text" id="Region" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Tipo de Caso" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Fecha Alta" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Estado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Ruta Evidencias" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Altitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Latitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Longitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Asignado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Efectividad2" disabled="true"/></td>
+      </tr>
+      <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 110px; margin-left: -30px; font-size: 30px">
+        <td width="5%"><input type="text" id="Id Caso" disabled="true" value="1-CS001"/></td>
+        <td width="5%"><input type="text" id="Region" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Tipo de Caso" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Fecha Alta" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Estado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Ruta Evidencias" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Altitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Latitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Longitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Asignado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Efectividad2" disabled="true"/></td>
+      </tr>
+      <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 110px; margin-left: -30px; font-size: 30px">
+        <td width="5%"><input type="text" id="Id Caso" disabled="true" value="1-CS001"/></td>
+        <td width="5%"><input type="text" id="Region" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Tipo de Caso" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Fecha Alta" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Estado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Ruta Evidencias" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Altitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Latitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Longitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Asignado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Efectividad2" disabled="true"/></td>
+      </tr>
+      <tr style="font-family: Arial, Helvetica, sans-serif; margin-top: 110px; margin-left: -30px; font-size: 30px">
+        <td width="5%"><input type="text" id="Id Caso" disabled="true" value="1-CS001"/></td>
+        <td width="5%"><input type="text" id="Region" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Tipo de Caso" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Fecha Alta" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Estado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Ruta Evidencias" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Altitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Latitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Longitud" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Asignado" disabled="true"/></td>
+        <td width="5%"><input type="text" id="Efectividad2" disabled="true"/></td>
+      </tr>
+      </table>
+    </article>
+  </section>
+  <footer style="margin-top: 520px;">
+    <p>Todos los derechos Reservados © 2021</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDOF1P_D5MA89Wue2V98ZTFoQIRYaX1h3Q",
+        authDomain: "migraseguro-ce58f.firebaseapp.com",
+        databaseURL: "https://migraseguro-ce58f.firebaseio.com",
+        projectId: "migraseguro-ce58f",
+        storageBucket: "migraseguro-ce58f.appspot.com",
+        messagingSenderId: "136609848053",
+        appId: "1:136609848053:web:8bca88def5a8f8ceb843bc",
+        measurementId: "G-9XX5L7P81W"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      function cerrar()
+      {
+        firebase.auth().signOut()
+        .then(function(){
+          console.log('Salir');
+          window.open("../Index.html","_self");
+        })
+        .cath(function(error){
+          console.log(error);
+        })
+      }
+    </script>
+  </body>
+</html>

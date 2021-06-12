@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Migrantes</title>
+  <link rel="stylesheet" href="./css/Estilos Login.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./img/Logo.jpg">
+</head>
+<body>
+  <header class = "container">
+    <img src="./img/Logo.jpg" class="Logo">
+      <h1 class="Titulo">GESTIÓN DE APP MIGRANTES
+  </header>
+  <main class="contenedor">
+    <section class="Login">
+      <input type="email" id="email" class="email" name="usuario" placeholder="Coloca tu email"/><br><br>
+      <input type="password" id="pass" class="pass" name="password" placeholder="Contraseña"/><br><br>
+      <input type="checkbox" id="check" class="Check" name="recordar">
+      <label for="recordar">Recordar nombre de usuario</label><br><br>
+      <button onclick="acceso()" id="acceso" class="crear">Acceder</button><br>
+      <p class="OlvContra">¿Olvidó su nombre de usuario o contraseña?</p>
+      <a href="./templates/Crear Cuenta.html" class="crear">Crear Cuenta<br>
+    </section>
+  </main>
+    <footer>
+      <p>Todos los derechos Reservados © 2021</p>
+    </footer>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDOF1P_D5MA89Wue2V98ZTFoQIRYaX1h3Q",
+    authDomain: "migraseguro-ce58f.firebaseapp.com",
+    databaseURL: "https://migraseguro-ce58f.firebaseio.com",
+    projectId: "migraseguro-ce58f",
+    storageBucket: "migraseguro-ce58f.appspot.com",
+    messagingSenderId: "136609848053",
+    appId: "1:136609848053:web:8bca88def5a8f8ceb843bc",
+    measurementId: "G-9XX5L7P81W"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  firebase.auth().onAuthStateChanged(function(user)
+  {
+    if (user)
+    {
+      var uid = user.uid;
+
+      window.open("./templates/Menu.html","_self");
+    }
+  });
+
+    function acceso()
+    {
+      var emailA=document.getElementById('email').value;
+      var passA=document.getElementById('pass').value;
+      var error;
+      firebase.auth().signInWithEmailAndPassword(emailA, passA)
+      .catch(function(error)
+      {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert("Usuario o Contraseña incorrectos");
+      });
+    }
+</script>
+</body>
+</html>

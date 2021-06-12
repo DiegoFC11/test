@@ -1,0 +1,78 @@
+*{
+  padding: 0px;
+  margin: 0px:
+  box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Logo
+{
+  width:200px;
+  height:200px;
+}
+
+.contenedor
+{
+  margin-top: 80px;
+}
+
+.Login
+{
+  text-align: center;
+}
+
+.email
+{
+  font-size: 25px;
+}
+
+.pass
+{
+  font-size: 25px;
+}
+
+.acceso
+{
+  background-color: #2F86C8;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.OlvContra
+{
+  font-size:17px;
+}
+
+.crear
+{
+  background-color: #FDC800;
+  color: black;
+  font-size: 20px;"
+}
+
+label
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+footer
+{
+    font-size:17px;
+    background: #00A945;
+    color: whitesmoke;
+    margin-top: 330px;
+    text-align: center;
+    font-size: large;
+}
